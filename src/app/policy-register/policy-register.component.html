@@ -1,0 +1,67 @@
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8 back" id="borderRadius">
+      <h3 style="text-align: center">Policy Registration Page</h3>
+      <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+              <br><br><br>
+    <form ngNativeValidate>
+      <div class="form-group">
+        <label for="Pname" style="font-size: 20px;">Policy Name : </label>
+        <input id="Pname" style="border:1px solid black;" type="text" [(ngModel)]="Pname" name="Pname" class="form-control curve" required="true" placeholder="Policy Name" />
+      </div>
+      <div class="form-group">
+        <label for="Sdate" style="font-size: 20px;">Start Date : </label>
+        <input id="Sdate" style="border:1px solid black;" type="text" [(ngModel)]="Sdate" name="Sdate" class="form-control curve" placeholder="Start date" required="true" />
+      </div>
+      <div class="form-group">
+        <label for="DIY" style="font-size: 20px;">Duration in Years : </label>
+        <input id="DIY" style="border:1px solid black;" type="text" [(ngModel)]="DIY" name="DIY" class="form-control curve" placeholder="Duration in Years" required="true" />
+      </div>
+      <div class="form-group">
+        <label for="Cname" style="font-size: 20px;">Company Name : </label>
+        <input id="Cname"  style="border:1px solid black;" type="text" [(ngModel)]="Cname" name="Cname" class="form-control curve" placeholder="Company Name" required="true"/>
+      </div>
+      <div class="form-group">
+        <label for="InitialDeposit" style="font-size: 20px;">Initial Deposit: </label>
+        <input id="InitialDeposit" style="border:1px solid black;" type="text" [(ngModel)]="InitialDeposit" name="InitialDeposit" class="form-control curve" placeholder="Initial Deposit" required="true"/>
+      </div>
+      <div class="form-group">
+        <label for="PType" style="font-size: 20px;">Policy Type : </label>
+        <input id="PType" style="border:1px solid black;" type="text" [(ngModel)]="PType" name="PType" class="form-control curve" placeholder="Policy Type" required="true"/>
+      </div>
+      <div class="form-group">
+        <label for="UType" style="font-size: 20px;">User Type : </label>
+        <input id="UType" style="border:1px solid black;" type="text" [(ngModel)]="UType" name="UType" class="form-control curve" placeholder="User Type" required="true"/>
+      </div>
+      <div class="form-group">
+        <label for="TPY" style="font-size: 20px;">Terms Per Year : </label>
+        <input id="TPY" style="border:1px solid black;" type="text" [(ngModel)]="TPY" name="TPY" class="form-control curve" placeholder="Terms Per Year" required="true"/>
+      </div>
+      <div class="form-group">
+        <label for="TAmount" style="font-size: 20px;">Term Amount : </label>
+        <input id="TAmount" style="border:1px solid black;" type="text" [(ngModel)]="TAmount" name="TAmount" class="form-control curve" placeholder="Term Amount" required="true"/>
+      </div>
+      <div class="form-group">
+        <label for="Interest" style="font-size: 20px;">Interest : </label>
+        <input id="Interest" style="border:1px solid black;" type="text" [(ngModel)]="Interest" name="Interest" class="form-control curve" placeholder="Interest for the policy" required="true"/>
+      </div>
+      <div class="form-group">
+        <div class="row">
+          <div class="col-md-2">
+            <button class="btn btnDesign curve" (click)="PolicyRegister()" style="padding: 13px 30px;">Register policy</button>
+          </div>
+          <div class="col-md-8"></div>
+          <div class="col-md-2">
+            <button class="btn btnDesign curve"  style="padding: 13px 60px;"   type="reset"> Reset </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  </div>
+  </div>
+
+  <div class="col-md-2"></div>
+</div>

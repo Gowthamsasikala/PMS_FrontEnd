@@ -1,0 +1,17 @@
+#borderRadius{
+    border: 2px solid #85929E;
+    padding: 10px;
+    border-radius: 25px;
+   
+}
+.curve{
+    border-radius: 25px;
+}
+.btnDesign{
+    border-radius: 25px;
+    background-color:#2E2C2E;
+    color:white;   
+}
+.back{
+    background-color: #EEECEE;
+}

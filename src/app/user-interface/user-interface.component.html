@@ -1,0 +1,59 @@
+<div class="row">
+    <div class="col-md-12">
+      
+      <br>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6 back" id="borderRadius">
+        <h3 style="text-align: center">Search For a Policies</h3>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <br><br><br>
+      <form ngNativeValidate>
+        <div class="form-group">
+          <label for="NOY" style="font-size: 20px;">Number Of Years: </label>
+          <input id="NOY" type="text" style="border:1px solid black;" [(ngModel)]="NOY" name="NOY" class="form-control curve" required="true" placeholder="Number of Years" />
+        </div>
+       
+        <div class="form-group">
+          <label for="Cname" style="font-size: 20px;">Company Name : </label>
+          <input id="Cname" type="text" style="border:1px solid black;" [(ngModel)]="Cname" name="Cname" class="form-control curve" placeholder="Company Name" required="true"/>
+        </div>
+       
+        <div class="form-group">
+          <label for="PType" style="font-size: 20px;">Policy Type : </label>
+          <input id="PType" style="border:1px solid black;" type="text" [(ngModel)]="PType" name="PType" class="form-control curve" placeholder="Policy Type" required="true"/>
+        </div>
+        
+       
+        <div class="form-group">
+          <label for="PID" style="font-size: 20px;">Policy ID: </label>
+          <input id="PID" style="border:1px solid black;" type="text" [(ngModel)]="PID" name="PID" class="form-control curve" placeholder="Policy ID" required="true"/>
+        </div>
+        <div class="form-group">
+            <label for="Pname" style="font-size: 20px;">Policy Name: </label>
+            <input id="Pname" style="border:1px solid black;" type="text" [(ngModel)]="Pname" name="Pname" class="form-control curve" placeholder="Policy Name" required="true"/>
+          </div>
+       
+        <div class="form-group">
+          <div class="row">
+            <div class="col-md-4">
+              <button class="btn btnDesign curve" (click)="SearchPolicy()"   style="padding: 13px 30px;">Search policy</button>
+  
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+              <button class="btn btnDesign curve"  style="padding: 13px 60px;margin-left: 20px;"   type="reset"> Reset </button>
+            </div>
+          </div>
+        </div>
+        <br>
+      </form>
+      </div>
+      </div>
+    </div>
+    <div class="col-md-3"></div>
+  </div>

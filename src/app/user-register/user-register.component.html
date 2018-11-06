@@ -1,0 +1,146 @@
+<div class="row">
+    <div class="col-md-7" style="padding-left: 42%;">
+        
+    </div>
+    <div class="col-md-5">
+        <h6 style="margin-left:300px;">
+            <b>Already a User? Then&ensp;</b>
+            <button class="btn btnDesign curve" style="margin-left: 5px; " routerLink='/Signin'>SignIn</button>
+        </h6>
+    </div>
+</div>
+
+
+
+
+    <div class="row">
+        
+        <div class="col-sm-2"></div>
+
+        <div class="col-sm-8 back" id="borderRadius">
+                <h3  style="text-align: center;">User Registration</h3>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <br><br><br>
+                    <form ngNativeValidate id="clear">
+
+                        <div class="form-group">
+                            <label for='first1' style="font-size: 20px;">First Name :</label>
+                            <input type='text' style="border:1px solid black;" id='first1' class="form-control curve" [(ngModel)]="first" name="first" placeholder="First Name" required/>
+                        </div>
+
+                        <div class="form-group">
+                            <label for='last1' style="font-size: 20px;">Last Name :</label>
+                            <input type='text' style="border:1px solid black;" id='last1' class="form-control curve" [(ngModel)]="last" name="last" placeholder="Last Name" required/>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for='dob1' style="font-size: 20px;">DOB :</label>
+                            <input type='text' style="border:1px solid black;" id='dob1' class="form-control curve" [(ngModel)]="dob" name="dob" placeholder="dd/mm/yyyy" required/>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for='Address1' style="font-size: 20px;">Address :</label>
+                            <input type='text' style="border:1px solid black;" id='Address1' class="form-control curve" [(ngModel)]="Address" name="Address" placeholder="Address" required/>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for='num1' style="font-size: 20px;">Contact No :</label>
+                            <input type='text' style="border:1px solid black;" id='num1' class="form-control curve" [(ngModel)]="num" name="num" placeholder="Contact No" required/>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for='email1' style="font-size: 20px;">Email Id :</label>
+                            <input type='text' style="border:1px solid black;" id='email1' class="form-control curve" [(ngModel)]="email" name="email" placeholder="Email Id" required/>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for='qualify1' style="font-size: 20px;">Qualification :</label>
+                            <input type='text' style="border:1px solid black;" id='qualify1' class="form-control curve" [(ngModel)]="qualify" name="qualify" placeholder="Qualification" required/>
+                        </div>
+
+
+                        <div class="radio form-group">
+
+                            <label>
+                                <input type="radio" style="border:1px solid black;" name="optionsRadios" id="optionsRadios" [(ngModel)]="Male" value="Male" checked />Male 
+                            </label>
+                            <label>
+                                <input type="radio"  style="border:1px solid black;" name="optionsRadios" id="optionsRadios" [(ngModel)]="Female" value="Female" checked/>Female
+                            </label>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for='Salary1' style="font-size: 20px;">Salary :</label>
+                            <input type='text' style="border:1px solid black;" id='Salary1' class="form-control curve" [(ngModel)]="Salary" name="Salary" placeholder="Salary" required/>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for='PAN1' style="font-size: 20px;">PAN Number :</label>
+                            <input type='text' style="border:1px solid black;" id='PAN1' class="form-control curve" [(ngModel)]="PAN" name="PAN" placeholder="PAN Number" required/>
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <label for='TOE1' style="font-size: 20px;">Type Of The Employer :</label>
+                            <input type='text' style="border:1px solid black;" id='TOE1' class="form-control curve" [(ngModel)]="TOE" name="TOE" required/>
+                        </div>
+
+                        <div class="form-group">
+                                <label for='EMPT' style="font-size: 20px;">Employer Name :</label>
+                                <input type='text' style="border:1px solid black;" id='EMPT' class="form-control curve" [(ngModel)]="EMPT" name="EMPT" required/>
+                            </div>
+
+
+                        <div class="form-group">
+                            <label for='Question1' style="font-size: 20px;">Hint Question : </label>
+                            <select id='Question1' [(ngModel)]="Question" name="Question">
+                                <option>Who is your favorite Hero ?</option>
+                                <option>Who is your favorite Heroine?</option>
+                                <option>What is your father's Name ?</option>
+                                <option>Which movie do you like?</option>
+                                <option>Whats your pet Name?</option>
+
+                            </select>
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <label for='Ans1' style="font-size: 20px;">Hint Answer :</label>
+                            <textarea class="form-control curve" style="border:1px solid black;" id='Ans1' [(ngModel)]="Ans" name="Ans"></textarea>
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <button class="btn btnDesign btn-lg curve" style="padding: 13px 30px;" (click)="Validation()">Register</button>
+                                </div>
+                                <div class="col-sm-4"></div>
+                                <div class="col-sm-4">
+                                    <button class="btn btnDesign btn-lg curve" type="reset" style="padding: 13px 45px;">Reset</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+                <div class="col-md-1"></div>
+
+            </div>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+
